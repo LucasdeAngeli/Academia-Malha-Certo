@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+}
+
+/*Menu*/
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+  opacity: 0.8;
+}
+
+nav li{
+  display: inline;
+}
+
+nav a {
+  float: center;
+  color: rgb(218, 218, 218);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #999999;
+  color: orange;
+  margin: 2px;
+  border-color: orange;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*Responsividade Menu*/
+@media screen and (max-widht: 600px){
+  nav a, nav-right{
+    float: none;
+    display: block;
+  }
+}
+
+
+map {
+  width: 100%;
+  height: 250px;
+}
+
+footer {
+  border-top: 5px;
+  border-left: 10px;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  padding: 0px 0;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+}
+
+section {
+  padding-left: 20px;
+}
+
+.news{
+  margin-top: 150px;
+  border: 10px;
+  border-radius: 2px;
+  text-align: justify;
+}
+
+.logo {
+  margin-right: 5px;
+}
+
+/*Blocos-Modalidades*/ /*Musculação*/
+.block{
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.block img{
+  height: 500px;
+  width: 33%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.block:hover .image {
+  opacity: 0.3;
+}
+
+.block:hover .middle {
+  opacity: 1;
+}
+
+.textomodal {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.img-top {
+  width: 100%;
+
+}
+
+.divao-modal {
+  display: flex;
+  -webkit-box-orient: horizontal;
+}
+
+/*Tabela de Preços*/
+.planos {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.preco-plano {
+  float: left;
+  padding: 8px;
+  width: 25%;
+}
+
+.preco {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.preco:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.preco .cabecalho-precos {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.preco li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.preco .precof {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .preco {
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    border: none;
+    scroll-margin: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    margin: 0;
+    background-color: transparent 100%;
+    position: relative;
+    
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.box-externo{
+    
+}
+
+.box-interno .form-login{
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}

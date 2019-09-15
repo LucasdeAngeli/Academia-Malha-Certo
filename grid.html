@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta content="initial-scale-1">
+    <title>Academia Malha Certo</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#header">INÍCIO</a></li>
+                <li><a href="#news">NOTÍCIAS</a></li>
+                <li><a href="#modal">MODALIDADES</a></li>
+                <li><a href="#planos">PLANOS</a></li>
+                <li><a href="#map">MAPA</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+
+        <!--Logo-->
+        <div logo style="position: absolute; top: 0px; left: 0px; border: 5%" id="header">
+            <img src="./logo.png" alt="logo" height="150px">
+        </div>
+    </header>
+
+    <div class="img-top">
+        <img src="./gym1.jpg" class="img-top">
+    </div>
+
+    <!--Notícias-->
+    <section>
+        <section class="news" id="news">
+            <h2>Novidades</h2>
+            <p>Aqui você encontrará as novidades</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+                passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
+    </section>
+
+    <!--Modalidades-->
+    <div class="divao-modal" id="modal">
+        <div class="block" >
+                <img src="./musc.jpg" class="image" alt="foto-academia" style="width: 100%">
+                <div class="middle">
+                    <div class="textomodal">Musculação</div>
+                </div>
+        </div>
+        <div class="block">
+            <img src="./dance.jpg" class="image" alt="foto-fitdance" style="width: 100%">
+            <div class="middle">
+                <div class="textomodal">FitDance</div>
+            </div>
+        </div>
+        <div class="block">
+            <img src="./jump.jpg" class="image" alt="foto-jump" style="width: 360px" height="642px">
+            <div class="middle">
+                <div class="textomodal">Jump</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Planos-->
+    <div class="planos" id="planos">
+        <ul class="preco">
+            <li class="cabecalho-precos">Mensal</li>
+            <li class="precof">R$ 99,90 /mês</li>
+            <li>Musculação</li>
+            <li>Horário Livre</li>
+        </ul>
+
+        <ul class="preco">
+            <li class="cabecalho-precos">Semestral</li>
+            <li class="precof">R$ 79,90 /mês</li>
+            <li>Musculação</li>
+            <li>Horário Livre</li>
+        </ul>
+
+        <ul class="preco">
+            <li class="cabecalho-precos" style="background-color: orange">Anual</li>
+            <li class="precof"><b>R$ 59,90 /mês</b></li>
+            <li><b>Musculação</b></li>
+            <li><b>Horário Livre</b></li>
+        </ul>
+
+        <ul class="preco">
+            <li class="cabecalho-precos">Econômico</li>
+            <li class="precof">R$ 29,90 /mês</li>
+            <li>Musculação</li>
+            <li>Horário Restrito</li>
+        </ul>
+    </div>
+
+    <!--Mapa-->
+    <div map id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.9169326543147!2d-40.25846138108415!3d-20.187378943212046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81eef7bd39f35%3A0x29a6f37b6975631e!2sEspa%C3%A7o+Fitness!5e0!3m2!1spt-BR!2sbr!4v1558192375583!5m2!1spt-BR!2sbr" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!--Contato-->
+    <div class="form-contact" id="contato">
+        <form action="submit" method="POST">
+
+            <label for="primeiro_nome">Nome</label>
+            <input type="text" id="primeiro_nome" placeholder="Nome:">
+
+            <label for="telefone">Telefone</label>
+            <input type="number" size="14" maxlength="11" id="telefone" placeholder=" (00)99999-9999">
+
+            <label for="cidade">Cidade</label>
+            <td>
+                <select name="cidade">
+                    <option value="vix">Vitória</option>
+                    <option value="serra">Serra</option>
+                    <option value="vv">Vila Velha</option>
+                    <option value="caria">Cariacica</option>
+                    <option value="via">Viana</option>
+                    <option value="guarapa">Guarapari</option>
+                    <option value="outro-cid">Outra Cidade</option>
+                    <option value="outro-uf">Outro Estado</option>
+                </select>
+            </td>
+        </form>
+    </div>
+
+    <!--Rodapé-->
+    <footer id="sobre">
+        <p>Powered by: LMA</p>
+    </footer>
+</body>
+</html>
